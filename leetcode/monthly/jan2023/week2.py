@@ -18,5 +18,33 @@ class Solution:
             * 1 <= n <= 105
             * 0 <= damage[i] <= 105
             * 0 <= armor <= 105
+
+        damage = [2,7,4,3], armor = 4
+        prefix = [2, 9, 13, 16]
+
+        damage = [3, 3, 3], armor = 0
+        prefix = [3, 6, 9]
+
+        damage = [2,5,3,4], armor = 7
+        [2, 7, 10, 14], armor = 7
+
+        max_damage = 5, we can cover up to 7
+        armor - max_damage < 0 ? armor : max_damage
         """
-        pass
+        ps = [0] * len(damage)
+        max_damage = damage[0]
+
+        for i in range(len(damage)):
+            if i > 0:
+                ps[i] += ps[i - 1]
+
+            ps[i] += damage[i]
+
+            max_damage = max(max_damage, damage[i])
+
+        if armor == 0:
+            return ps[-1] + 1
+
+        damage_taken_by_armor = armor if armor - max_damage < 0 else max_damage
+
+        return ps[-1] - damage_taken_by_armor + 1
