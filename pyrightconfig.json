@@ -1,0 +1,14 @@
+{
+  "defineConstant": {
+    "DEBUG": true
+  },
+  "venv": "algorithms",
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+  "pythonVersion": "3.11",
+  "executionEnvironments": [
+    {
+      "root": "."
+    }
+  ]
+}
