@@ -2,7 +2,6 @@ from collections import defaultdict
 
 
 class Solution:
-    # TODO: Worth coming back and figuring this out
     def minTime(self, n: int, edges: list[list[int]], hasApple: list[bool]) -> int:
         # check if an apple exists
         has_apple = False
