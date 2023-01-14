@@ -2,13 +2,14 @@ import heapq
 from collections import defaultdict
 
 
-# TODO: Figure out how this logic works. I still can't properly understand it
 class Solution:
     def longestPath(self, parent: list[int], s: str) -> int:
-        # we should build a graph based on the list of parents that we're given
-        # Turn the above list of parents into a graph
-        # [-1, 0, 0, 1, 1, 2] =>
-        # {0: [1, 2], 1: [0, 3, 4], 2: [0, 5], 3: [1], 4: [1], 5: [2]}
+        """
+        we should build a graph based on the list of parents that we're given
+        Turn the above list of parents into a graph
+        [-1, 0, 0, 1, 1, 2] =>
+        {0: [1, 2], 1: [0, 3, 4], 2: [0, 5], 3: [1], 4: [1], 5: [2]}
+        """
         graph = defaultdict(list)
 
         for i, value in enumerate(parent):
