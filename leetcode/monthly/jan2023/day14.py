@@ -1,4 +1,3 @@
-# TODO: Solve this problem later
 class Solution:
     def smallestEquivalentString(self, s1: str, s2: str, base_str: str) -> str:
         """
