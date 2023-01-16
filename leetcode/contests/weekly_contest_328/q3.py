@@ -4,6 +4,24 @@ from typing import List
 
 
 class Solution:
+    def countGood(self, nums: List[int], k: int) -> int:
+        """
+        Ideal sliding window solution
+        """
+        res, i = 0, 0
+        count = Counter()
+
+        for num in nums:
+            k -= count[num]
+            count[num] += 1
+            while k <= 0:
+                count[nums[i]] -= 1
+                k += count[nums[i]]
+                i += 1
+            res += i
+
+        return res
+
     def get_number_of_pairs_in_window(self, counter) -> int:
         pairs_in_window = [comb(value, 2) for value in counter.values() if value > 0]
         return sum(value for value in pairs_in_window if value > 0)
