@@ -1,14 +1,15 @@
 {
-  "defineConstant": {
-    "DEBUG": true
-  },
-  "venv": "algorithms",
-  "reportMissingImports": true,
-  "reportMissingTypeStubs": false,
-  "pythonVersion": "3.11",
-  "executionEnvironments": [
-    {
-      "root": "."
-    }
-  ]
+   "defineConstant" : {
+      "DEBUG" : true
+   },
+   "executionEnvironments" : [
+      {
+         "root" : "."
+      }
+   ],
+   "pythonVersion" : "3.11",
+   "reportMissingImports" : true,
+   "reportMissingTypeStubs" : false,
+   "venv" : "algorithms",
+   "venvPath" : "/Users/jaimeabbariao/.pyenv/versions"
 }
