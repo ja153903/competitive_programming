@@ -11,9 +11,9 @@ class Solution:
 
         We can take advantage of Kadane here.
 
-        If non-circular array, then we should just take advantage of Kadane.
+        If it's a non-circular array, then we should just take advantage of Kadane.
 
-        If circular array, then we should take advantage of:
+        If it's a circular array, then we should take advantage of:
             total - min_sum (this will give us the max subarray)
         """
 
