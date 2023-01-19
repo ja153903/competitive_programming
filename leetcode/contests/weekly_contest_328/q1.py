@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def differenceOfSum(self, nums: List[int]) -> int:
+    def differenceOfSum(self, nums: list[int]) -> int:
         elem = 0
         digit = 0
 

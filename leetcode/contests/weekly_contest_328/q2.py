@@ -1,10 +1,8 @@
-from typing import List
-
 import numpy as np
 
 
 class Solution:
-    def rangeAddQueries_tle(self, n: int, queries: List[List[int]]) -> List[List[int]]:
+    def rangeAddQueries_tle(self, n: int, queries: list[list[int]]) -> list[list[int]]:
         mat = [[0 for _ in range(n)] for _ in range(n)]
 
         for query in queries:
@@ -16,7 +14,7 @@ class Solution:
 
         return mat
 
-    def rangeAddQueries(self, n: int, queries: List[List[int]]) -> List[List[int]]:
+    def rangeAddQueries(self, n: int, queries: list[list[int]]) -> list[list[int]]:
         mat = np.array([[0 for _ in range(n)] for _ in range(n)])
 
         for query in queries:

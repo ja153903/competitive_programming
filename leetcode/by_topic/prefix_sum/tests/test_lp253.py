@@ -1,5 +1,3 @@
-from typing import List
-
 import pytest
 
 from ..lp253 import Solution
@@ -16,5 +14,5 @@ solution = Solution()
         ([[2, 11], [6, 16], [11, 16]], 2),
     ],
 )
-def test_minMeetingRooms(intervals: List[List[int]], expected: int):
+def test_minMeetingRooms(intervals: list[list[int]], expected: int):
     assert solution.minMeetingRooms(intervals) == expected

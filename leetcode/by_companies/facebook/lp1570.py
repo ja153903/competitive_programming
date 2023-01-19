@@ -1,9 +1,9 @@
-from typing import List, Self
+from typing import Self
 from collections import defaultdict
 
 
 class SparseVector:
-    def __init__(self, nums: List[int]):
+    def __init__(self, nums: list[int]):
         self.sparse_vec = defaultdict(int)
 
         for i, val in enumerate(nums):

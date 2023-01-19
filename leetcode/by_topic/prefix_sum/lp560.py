@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
-    def subarraySum(self, nums: List[int], k: int) -> int:
+    def subarraySum(self, nums: list[int], k: int) -> int:
         pass

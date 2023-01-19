@@ -1,10 +1,9 @@
 from collections import Counter
 from math import comb
-from typing import List
 
 
 class Solution:
-    def countGood(self, nums: List[int], k: int) -> int:
+    def countGood(self, nums: list[int], k: int) -> int:
         """
         Ideal sliding window solution
         """
@@ -28,7 +27,7 @@ class Solution:
 
     # This solution works but it TLEs because of the above method
     # to count the number of pairs
-    def countGood_tle(self, nums: List[int], k: int) -> int:
+    def countGood_tle(self, nums: list[int], k: int) -> int:
         counter = Counter()
 
         res, start = 0, 0

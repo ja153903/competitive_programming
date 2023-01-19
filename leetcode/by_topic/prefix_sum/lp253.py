@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+    def minMeetingRooms(self, intervals: list[list[int]]) -> int:
         starts, ends = [], []
 
         for s, e in intervals:
