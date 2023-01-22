@@ -1,12 +1,9 @@
+from utility.arrays import get_prefix_sum
+
+
 class Solution:
     def sumOddLengthSubarrays(self, arr: list[int]) -> int:
-        prefix = []
-
-        for num in arr:
-            if not prefix:
-                prefix.append(num)
-            else:
-                prefix.append(prefix[-1] + num)
+        prefix = get_prefix_sum(arr)
 
         res = 0
 
